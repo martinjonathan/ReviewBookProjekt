@@ -1,0 +1,25 @@
+
+
+
+
+.top-bar {
+    background-color: #333;
+    overflow: auto;
+    position: sticky; /* macht grad irgendwie nichts*/
+}
+
+.AuflistungReviews {
+    clear: left;
+}
+
+.NewReviewButton {
+    margin-top: 40px;       /*macht grad irgendwie auch keinen Unterschied*/
+    margin-bottom: 40px;
+    margin-right: 5px;
+}
+
+.footer {
+    background-color: #333;
+    overflow: auto;
+
+}
