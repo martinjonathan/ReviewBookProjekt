@@ -23,3 +23,6 @@
     overflow: auto;
 
 }
+.newReview {
+    font-weight: bold;
+    font-style: normal;    /*Style für Elemente der NewReview Seite*/
