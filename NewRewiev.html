@@ -18,9 +18,52 @@
                 <h1 id="Überschrift">Neues Review erstellen</h1>
             </span>
         </div>
+        <form
+            onsubmit = "validateForm(event)"
+            action   = "contact-form.php"
+            method   = "POST"
+        >
         <div class="newReview">
             <h1>Neues Review erstellen</h1>
-            <li class="Parameter">
+
+            <label id="label" for="Genre">
+                Genre:
+                <span class="required">*</span>
+            </label>
+            <div class="Genre">
+                <input type="text" name="Text">
+            </div>
+
+            <label for="Titel">
+                Titel:
+                <span class="required">*</span>
+            </label>
+            <div class="Titel">
+                <input type="text" name="Titel">
+            </div>
+
+            <label for="Regisseur">
+                Regisseur:
+                <span class="required">*</span>
+            </label>
+            <div class="Regisseur">
+                <input type="text" name="Titel">
+            </div>
+
+            <!--Bewertung mit Sternchen-->
+
+            <label for="Kritik">
+                Ihre Nachricht:
+                <span class="required">*</span>
+            </label>
+            <textarea name="Kritik"></textarea>
+
+            <input type="submit" value="Erstellen" />
+        </form>
+        <div id="result"></div>
+
+        <!--alter Code, vor der JavaScript Datei-->
+            <!--<li class="Parameter">
                 Genre
             </li>
             <li class="Parameter">
@@ -32,9 +75,9 @@
             <li class="Parameter">
                 Bewertung
             </li>
-            <li class="Parameter">
+            <li class="ParameterKritik">
                 Kritik
-            </li>
+            </li>-->
 
         </div>
     </body>
