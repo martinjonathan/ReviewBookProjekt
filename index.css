@@ -25,13 +25,50 @@
     overflow: auto;
 
 }
+
+/*Ab hier werden die Styles für die Seite "NewRewiev" festgelegt*/
 .newReview {
     font-weight: bold;
     font-style: normal;    /*Style für Elemente der NewReview Seite*/
 }
 
 #Überschrift {
-    color: #000000;
+    color: #FFFFFF;
     font-weight: bold;
     padding-left: 40vw;
+    padding-top: 5px;       /*Style für meine Überschrift in der Top-Bar*/
+}
+
+div.newReview {
+    display: block;
+
+    margin: auto;
+    padding: 1em;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background-color: #FAFAFA;  /*Rahmen/Blockelement um die Einträge*/
+}
+
+li.Parameter {
+    display: block;
+
+    margin: 1em;
+    padding: 0.5em;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background-color: #FAFAFA;  /*Rahmen/Blockelement um die einzelnen Einträge*/
+}
+
+li.ParameterKritik {
+    display: block;
+
+    margin: 1em;
+    padding: 0.5em;
+    padding-bottom: 20em;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background-color: #FAFAFA;  /*Rahmen/Blockelement um den Eintrag Kritik*/
 }
