@@ -26,16 +26,16 @@ let validateForm = event => {
         message += "Geben Sie bitte eine Kritik ein. <br />";
     }
 
-    let kritikElement = document.getElementById("kritikElement");
+    let resultElement = document.getElementById("result");
 
     if (okay) {
         message = "Vielen Dank für Ihre Kritik!";
-        kritikElement.classList.add("okay");        <!--classList muss noch erstellt werden-->
+        resultElement.classList.add("okay");        <!--classList muss noch erstellt werden-->
     } else {
-        kritikElement.classList.remove("okay");     <!--classList muss noch erstellt werden-->
+        resultElement.classList.remove("okay");     <!--classList muss noch erstellt werden-->
     }
 
     resultElement.innerHTML = message;
 
-    event.preventDefault();
+    <!--event.preventDefault();-->
 }
