@@ -21,6 +21,11 @@ let validateForm = event => {
         message += "Geben Sie bitte einen Regisseur ein. <br />";
     }
 
+    if (form.erscheinungsjahr.value === "") {
+        okay = false;
+        message += "Geben Sie bitte ein Erscheinungsjahr ein. <br />";
+    }
+
     if (form.kritik.value === "") {
         okay = false;
         message += "Geben Sie bitte eine Kritik ein. <br />";
