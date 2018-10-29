@@ -8,9 +8,19 @@
     background-color: #333;
     overflow: auto;
     position: sticky;
+    top: 0;
     border-radius: 0.5em;
     margin-bottom: 0.5em;
-    /* macht grad irgendwie nichts*/
+    /*padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;*/
+    padding: 1em;
+}
+
+.HinzufügenText {
+    float: left;
+    margin-top: 2.5em;
+    margin-right: 0.5em;
 }
 
 .AuflistungReviews {
@@ -18,9 +28,9 @@
 }
 
 .NewReviewButton {
-    margin-top: 40px;       /*macht grad irgendwie auch keinen Unterschied*/
-    margin-bottom: 40px;
-    margin-right: 5px;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .footer {
