@@ -1,8 +1,7 @@
-
-
 html {
     background-image: url(Filmwand.png);
 }
+
 .html {
     background-color: #ABABAB;
 }
@@ -99,17 +98,14 @@ select {
 
 textarea {
     height: 12em;
-
 }
 
 input[type="submit"] {
     margin-top: 2em;
     width: auto;
-
     background-color: #A4A4A4;
     color: white;
     font-weight: bold;
-
     transition: background-color 0.2s;
 }
 
@@ -126,7 +122,6 @@ input[type="submit"]:hover {
     color: darkgreen;
 }
 
-
 #Überschrift {
     color: #FFFFFF;
     font-weight: bold;
@@ -136,10 +131,8 @@ input[type="submit"]:hover {
 
 div.newReview {
     display: block;
-
     margin: auto;
     padding: 1em;
-
     border: 1px solid black;
     border-radius: 0.5em;
     background-color: #FAFAFA;  /*Rahmen/Blockelement um die Einträge*/
@@ -147,10 +140,8 @@ div.newReview {
 
 li.Parameter {
     display: block;
-
     margin: 1em;
     padding: 0.5em;
-
     border: 1px solid black;
     border-radius: 0.5em;
     background-color: #FAFAFA;  /*Rahmen/Blockelement um die einzelnen Einträge*/
@@ -158,11 +149,9 @@ li.Parameter {
 
 li.ParameterKritik {
     display: block;
-
     margin: 1em;
     padding: 0.5em;
     padding-bottom: 20em;
-
     border: 1px solid black;
     border-radius: 0.5em;
     background-color: #FAFAFA;  /*Rahmen/Blockelement um den Eintrag Kritik*/
