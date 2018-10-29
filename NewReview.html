@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>New Review</title>
         <link rel="shortcut icon" href="siteicon.png" />
-        
+
         <!--<link rel="stylesheet" href="NewRewiev.css"/>-->
         <link rel="stylesheet" href="index.css" />
         <script src="./NewReview.js"></script>
@@ -54,7 +54,27 @@
                 <input id="regisseur" type="text" name="regisseur">
             </div>
 
+            <label for="erscheinungsjahr">
+                Erscheinungsjahr:
+                <span class="required">*</span>
+            </label>
+            <div class="erscheinungsjahr">
+                <input id="erscheinungsjahr" type="date" name="erscheinungsjahr">
+            </div>
+
             <!--Bewertung mit Sternchen-->
+            <label for="bewetung">
+                Bewertung:
+            </label>
+            <div class="Bewertung">
+                <select name="bewertung">
+                    <option selected="selected">⭐</option>
+                    <option>⭐⭐</option>
+                    <option>⭐⭐⭐</option>
+                    <option>⭐⭐⭐⭐</option>
+                    <option>⭐⭐⭐⭐⭐</option>
+                </select>
+            </div>
 
             <label for="kritik">
                 Ihre Kritik:
