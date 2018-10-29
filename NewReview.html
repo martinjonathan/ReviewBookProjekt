@@ -7,7 +7,7 @@
 
         <!--<link rel="stylesheet" href="NewRewiev.css"/>-->
         <link rel="stylesheet" href="index.css" />
-        <script src="NewReview.js"></script>
+        <script src="./NewReview.js"></script>
     </head>
 
     <body>
@@ -27,41 +27,53 @@
         <div class="newReview">
             <h1>Neues Review erstellen</h1>
 
-            <label id="label" for="Genre">
+
+            <label id="label" for="genre">
                 Genre:
                 <span class="required">*</span>
             </label>
-            <div class="Genre">
-                <input type="text" name="Text">
+            <div class="genre">
+                <input id="genre" type="text" name="Text">
             </div>
 
-            <label for="Titel">
+
+            <label for="titel">
                 Titel:
                 <span class="required">*</span>
             </label>
-            <div class="Titel">
-                <input type="text" name="Titel">
+            <div class="titel">
+                <input id="titel"type="text" name="Titel">
             </div>
 
-            <label for="Regisseur">
+
+            <label for="regisseur">
                 Regisseur:
                 <span class="required">*</span>
             </label>
-            <div class="Regisseur">
-                <input type="text" name="Titel">
+            <div class="regisseur">
+                <input id="regisseur" type="text" name="regisseur">
             </div>
 
             <!--Bewertung mit Sternchen-->
 
-            <label for="Kritik">
+            <label for="kritik">
                 Ihre Nachricht:
                 <span class="required">*</span>
             </label>
-            <textarea name="Kritik"></textarea>
+            <div>
+                <textarea id="kritik" name="kritik"></textarea>
+            </div>
 
-            <input type="submit" value="Erstellen" />
+            <input id="submit" type="submit" value="Erstellen" />
+
         </form>
-        <div id="result"></div>
+
+        <div id="result">
+        </div>
+        <!-- <button  id="submit"type="button" name="button">Erstellen</button>
+        <p id="error">
+        </p> -->
+
 
         <!--alter Code, vor der JavaScript Datei-->
             <!--<li class="Parameter">

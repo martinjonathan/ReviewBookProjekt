@@ -50,7 +50,7 @@ form label {
 }
 
 form label:first-child {
-    margin-top: 0;
+    margin-top: 0.5;
 }
 
 form label .required {
@@ -66,6 +66,9 @@ textarea {
     border-radius: 0.5em;
 }
 
+input {
+    margin-left:auto;
+}
 textarea {
     height: 12em;
     width: 20em;
@@ -90,12 +93,10 @@ input[type="submit"]:hover {
 
 #result {
     margin-top: 1em;
-    color: red;
+    Color: red;
 }
 
-#result.okay {
-    color: darkgreen;
-}
+
 
 
 #Überschrift {
