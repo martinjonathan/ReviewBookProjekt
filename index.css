@@ -18,6 +18,11 @@ html {
     padding: 1em;
 }
 
+.StartseitenText {
+    float: right;
+    margin-left: 0.5em;
+}
+
 .HinzufügenText {
     float: left;
     margin-top: 2.5em;
