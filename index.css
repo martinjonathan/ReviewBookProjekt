@@ -41,6 +41,7 @@ form {
     border: 1px solid #d0d0d0;
     background: #f0f0f0;
     padding: 1em;
+
 }
 
 form label {
@@ -62,10 +63,13 @@ textarea {
     padding: 0.5em;
     margin: 0;
     outline: none;
+    border-radius: 0.5em;
 }
 
 textarea {
     height: 12em;
+    width: 20em;
+    margin-top: 0.5em;
 
 }
 

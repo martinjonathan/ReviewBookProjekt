@@ -37,5 +37,5 @@ let validateForm = event => {
 
     resultElement.innerHTML = message;
 
-    <!--event.preventDefault();-->
+
 }
