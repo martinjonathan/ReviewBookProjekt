@@ -6,22 +6,22 @@ let validateForm = event => {
     let okay = true;
     let message = "";
 
-    if (form.Genre.value == "") {
+    if (form.genre.value === "") {
         okay = false;
         message += "Geben Sie bitte ein Genre ein. <br />";
     }
 
-    if (form.Titel.value == "") {
+    if (form.titel.value === "") {
         okay = false;
         message += "Geben Sie bitte einen Titel ein. <br />";
     }
 
-    if (form.Regisseur.value == "") {
+    if (form.regisseur.value === "") {
         okay = false;
         message += "Geben Sie bitte einen Regisseur ein. <br />";
     }
 
-    if (form.Kritik.value == "") {
+    if (form.kritik.value === "") {
         okay = false;
         message += "Geben Sie bitte eine Kritik ein. <br />";
     }
@@ -30,12 +30,29 @@ let validateForm = event => {
 
     if (okay) {
         message = "Vielen Dank für Ihre Kritik!";
-        resultElement.classList.add("okay");        <!--classList muss noch erstellt werden-->
+        resultElement.style.color = "darkgreen";
+                <!--classList muss noch erstellt werden-->
     } else {
-        resultElement.classList.remove("okay");     <!--classList muss noch erstellt werden-->
+                <!--classList muss noch erstellt werden-->
     }
 
     resultElement.innerHTML = message;
-
-    <!--event.preventDefault();-->
 }
+
+//let submitbutton = document.getElementById("submit");
+// let genre = document.getElementById("genre");
+// let titel = document.getElementById("titel");
+// let regisseur = document.getElementById("regisseur");
+// let Bewertung = document.getElementById("text");
+// let error = document.getElementById("error");
+//
+// submitbutton.addEventListener("click", validate);
+//
+// function validate(){
+//     if (genre.value === "" || titel.value === "" || regisseur.value === "" || Bewertung
+// .value === "") {
+// error.innerHTML = "Bitte tragen Sie alle leeren Felder ein.";
+// } else {
+//
+// }
+// };
