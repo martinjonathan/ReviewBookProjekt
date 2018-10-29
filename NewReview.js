@@ -44,6 +44,17 @@ let validateForm = event => {
     resultElement.innerHTML = message;
 }
 
+let list = getElementById("genre");
+
+function add(){
+    let node = document.createElement("list");
+    let textnode = document.createTextNode(input.value);
+    node.appendChild(textNode);
+
+    document.getElementById("list").appendChild(node);
+}
+
+
 //let submitbutton = document.getElementById("submit");
 // let genre = document.getElementById("genre");
 // let titel = document.getElementById("titel");
