@@ -44,15 +44,72 @@ let validateForm = event => {
     resultElement.innerHTML = message;
 }
 
-let list = getElementById("genre");
+// this._data = [
+//     {
+//         genre: "Willy",
+//         titel: "Tanner",
+//         regisseur: "+49 711 564412",
+//         erscheinungsjahr: "willy.tanner@alf.com",
+//         bewertung: "",
+//         kritik: "wcerferfce"
+//     }
+// ];
+//
+//
+// getData() {
+//     return this._data;
+// }
+// getDataByIndex(index) {
+//     return this._data[index];
+// }
+// updateDataByIndex(index, dataset) {
+//     this._data[index] = dataset;
+// }
+// deleteDataByIndex(index) {
+//     this._data.splice(index, 1);
+// }
+// appendData(dataset) {
+//     this._data.push(dataset);
+//     return this._data.length - 1;
+// }
+//
+// let template = document.getElementById("template-page-list-li").innerHTML;
+// let index = -1;
+//
+// data.forEach(dataset => {
+//     // Index hochzählen
+//     index++;
+//
+//     // Neues Element auf Basis des Templates erzeugen
+//     let dummy = document.createElement("div");
+//     dummy.innerHTML = template;
+//
+//     dummy.innerHTML = dummy.innerHTML.replace("$INDEX$", index);
+//     dummy.innerHTML = dummy.innerHTML.replace("$GENRE$", dataset.genre);
+//     dummy.innerHTML = dummy.innerHTML.replace("$TITEL", dataset.titel);
+//     dummy.innerHTML = dummy.innerHTML.replace("$REGISSEUR$", dataset.regisseur);
+//     dummy.innerHTML = dummy.innerHTML.replace("$ERSCHEINUNGSJAHR$$", dataset.erscheinungsjahr);
+//     dummy.innerHTML = dummy.innerHTML.replace("$BEWERTUNG$", dataset.bewertung);
+//     dummy.innerHTML = dummy.innerHTML.replace("$KRITIK$", dataset.kritik);
+//
+//     let li = dummy.firstElementChild;
+//
+//     if (li) {
+//         dummy.removeChild(li);
+//         ol.appendChild(li);
+// }
 
-function add(){
-    let node = document.createElement("list");
-    let textnode = document.createTextNode(input.value);
-    node.appendChild(textNode);
 
-    document.getElementById("list").appendChild(node);
-}
+
+// let list = getElementById("genre");
+//
+// function add(){
+//     let node = document.createElement("list");
+//     let textnode = document.createTextNode(input.value);
+//     node.appendChild(textNode);
+//
+//     document.getElementById("list").appendChild(node);
+// }
 
 
 //let submitbutton = document.getElementById("submit");
