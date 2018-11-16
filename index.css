@@ -7,13 +7,13 @@ html {
 }
 
 .top-bar {
-    background-color: #333;
+    background-color: #333; /*background color */
     overflow: auto;
     position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    border-radius: 0.5em;
-    margin-bottom: 0.5em;
+    position: sticky; /* top bar hängen bleibt wenn man scrollt */
+    top: 0; /* abstand nach oben */
+    border-radius: 0.5em; /* radius außen */
+    margin-bottom: 0.5em; /* platzhalter für unten */
     padding: 1em;
 }
 

@@ -70,6 +70,7 @@ const submitForm = () => {
     if (reviews === null || reviews === undefined) {
         reviews = [review];
     } else {
+        reviews = JSON.parse(reviews);
         if (reviews.length < 5) {
             reviews.push(review);
         } else{
