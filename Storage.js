@@ -13,7 +13,6 @@ $(document).ready(function() {
             return;
         }
         const reviews = JSON.parse(reviewsString);
-        console.log("reviews = " + JSON.stringify(reviews, null, 2));
 
         // create the list of reviews in html and add it to the page in the "reviewList" HTML Element
         const parent = $("#reviewList");
