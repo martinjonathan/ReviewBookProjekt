@@ -44,6 +44,44 @@ let validateForm = event => {
     resultElement.innerHTML = message;
 }
 
+const submitForm = () => {
+
+    // read from the form the values of the review attributes
+    const titel = document.getElementById("titel").value;
+    const genre = document.getElementById("genre").value;
+    const regisseur = document.getElementById("regisseur").value;
+    const erscheinungsjahr = document.getElementById("erscheinungsjahr").value;
+    const bewertungSelect = document.getElementById("bewertung");
+    const bewertungIndex = bewertungSelect.selectedIndex;
+    const kritik = document.getElementById("kritik").value;
+
+    const review = {
+        titel,
+        genre,
+        regisseur,
+        erscheinungsjahr,
+        bewertungIndex,
+        kritik,
+    };
+    // check if reviews are already in the local localStorage
+    // if not then add a new array with the review in the local storage
+    // if yes add the new review to the array already in the local storage
+    let reviews = localStorage.getItem("reviews");
+    if (reviews === null || reviews === undefined) {
+        reviews = [review];
+    } else {
+        if (reviews.length < 5) {
+            reviews.push(review);
+        } else{
+            reviews.unshift(review);
+            reviews.pop();
+        }
+    }
+    localStorage.setItem("reviews", reviews);
+    alert("Review erfolgreich gespeichert. Weiter zur Startseite.")
+    location = "Startseite.html";
+}
+
 // this._data = [
 //     {
 //         genre: "Willy",

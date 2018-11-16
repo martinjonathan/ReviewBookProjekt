@@ -19,11 +19,12 @@
                 <h1 id="Überschrift">Neues Review erstellen</h1>
             </span>
         </div>
-        <form
+        <!-- <form
             onsubmit = "validateForm(event)"
             action   = "contact-form.php"
             method   = "POST"
-        >
+        > -->
+        <form>
         <div class="newReview">
             <h1>Neues Review erstellen</h1>
 
@@ -63,11 +64,11 @@
             </div>
 
             <!--Bewertung mit Sternchen-->
-            <label for="bewetung">
+            <label for="bewertung">
                 Bewertung:
             </label>
             <div class="Bewertung">
-                <select name="bewertung">
+                <select id="bewertung" name="bewertung">
                     <option selected="selected">⭐</option>
                     <option>⭐⭐</option>
                     <option>⭐⭐⭐</option>
@@ -84,7 +85,7 @@
                 <textarea id="kritik" name="kritik"></textarea>
             </div>
 
-            <input id="submit" type="submit" value="Erstellen" />
+            <input id="submit" type="button" value="Erstellen" onclick="submitForm()" />
 
         </form>
 
