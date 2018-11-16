@@ -77,7 +77,7 @@ const submitForm = () => {
             reviews.pop();
         }
     }
-    localStorage.setItem("reviews", reviews);
+    localStorage.setItem("reviews", JSON.stringify(reviews));
     alert("Review erfolgreich gespeichert. Weiter zur Startseite.")
     location = "Startseite.html";
 }
