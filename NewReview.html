@@ -7,7 +7,7 @@
 
         <!--<link rel="stylesheet" href="NewRewiev.css"/>-->
         <link rel="stylesheet" href="index.css" />
-        <script src="./NewReview.js"></script>
+        <script src="NewReview.js"></script>
     </head>
 
     <body>
@@ -19,12 +19,11 @@
                 <h1 id="Überschrift">Neues Review erstellen</h1>
             </span>
         </div>
-        <!-- <form
+        <form
             onsubmit = "validateForm(event)"
             action   = "contact-form.php"
             method   = "POST"
-        > -->
-        <form>
+        >
         <div class="newReview">
             <h1>Neues Review erstellen</h1>
 
@@ -64,11 +63,11 @@
             </div>
 
             <!--Bewertung mit Sternchen-->
-            <label for="bewertung">
+            <label for="bewetung">
                 Bewertung:
             </label>
             <div class="Bewertung">
-                <select id="bewertung" name="bewertung">
+                <select name="bewertung">
                     <option selected="selected">⭐</option>
                     <option>⭐⭐</option>
                     <option>⭐⭐⭐</option>
@@ -84,8 +83,8 @@
             <div>
                 <textarea id="kritik" name="kritik"></textarea>
             </div>
-        </div>
-        <input id="submit" type="button" value="Erstellen" onclick="submitForm()" />
+
+            <input id="submit" type="submit" value="Erstellen" />
 
         </form>
 
@@ -113,6 +112,8 @@
             <li class="ParameterKritik">
                 Kritik
             </li>-->
+
+
 
         </div>
     </body>
