@@ -82,7 +82,7 @@ const submitForm = () => {
     } else {
         reviews = JSON.parse(reviews);
         if (reviews.length < MAX_NUMBER_OF_REVIEW) {
-            reviews.push(review);
+            reviews.unshift(review);
         } else{
             reviews.unshift(review);
             reviews.pop();
