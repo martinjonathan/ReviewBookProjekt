@@ -1,32 +1,39 @@
 <!--JavaScript Datei zur bearbeitung des Eingabeformulars-->
 <!--Die classList muss noch erstellt werden!-->
 
-let validateForm = event => {
-    let form = event.target;
+const validateForm = event => {
     let okay = true;
     let message = "";
+    const titel = document.getElementById("titel").value;
+    const genre = document.getElementById("genre").value;
+    const regisseur = document.getElementById("regisseur").value;
+    const erscheinungsjahr = document.getElementById("erscheinungsjahr").value;
+    const bewertungSelect = document.getElementById("bewertung");
+    const bewertungIndex = bewertungSelect.selectedIndex;
+    const kritik = document.getElementById("kritik").value;
 
-    if (form.genre.value === "") {
+
+    if (genre === "") {
         okay = false;
         message += "Geben Sie bitte ein Genre ein. <br />";
     }
 
-    if (form.titel.value === "") {
+    if (titel === "") {
         okay = false;
         message += "Geben Sie bitte einen Titel ein. <br />";
     }
 
-    if (form.regisseur.value === "") {
+    if (regisseur === "") {
         okay = false;
         message += "Geben Sie bitte einen Regisseur ein. <br />";
     }
 
-    if (form.erscheinungsjahr.value === "") {
+    if (erscheinungsjahr === "") {
         okay = false;
         message += "Geben Sie bitte ein Erscheinungsjahr ein. <br />";
     }
 
-    if (form.kritik.value === "") {
+    if (kritik === "") {
         okay = false;
         message += "Geben Sie bitte eine Kritik ein. <br />";
     }
@@ -42,6 +49,7 @@ let validateForm = event => {
     }
 
     resultElement.innerHTML = message;
+    return okay;
 }
 
 const submitForm = () => {
@@ -82,3 +90,11 @@ const submitForm = () => {
     alert("Review erfolgreich gespeichert. Weiter zur Startseite.")
     location = "Startseite.html";
 }
+
+
+const validateAndSubmitForm = (event) => {
+    const validated = validateForm(event);
+    if (validated) {
+        submitForm();
+    }
+};
