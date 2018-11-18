@@ -1,6 +1,8 @@
 <!--JavaScript Datei zur bearbeitung des Eingabeformulars-->
 <!--Die classList muss noch erstellt werden!-->
 
+const MAX_NUMBER_OF_REVIEW = 5;
+
 const validateForm = event => {
     let okay = true;
     let message = "";
@@ -79,7 +81,7 @@ const submitForm = () => {
         reviews = [review];
     } else {
         reviews = JSON.parse(reviews);
-        if (reviews.length < 5) {
+        if (reviews.length < MAX_NUMBER_OF_REVIEW) {
             reviews.push(review);
         } else{
             reviews.unshift(review);
